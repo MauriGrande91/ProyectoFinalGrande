@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Average:400');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento:400');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Container_Grid{
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.979);
+    grid-template-areas: "header"
+                         "div"
+                         "main"
+                         "footer";                   
+    grid-template-rows: auto auto auto auto;
+}
+header{
+    grid-area: header;
+}
+div{
+   grid-area: div; 
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+.encabezado{
+    background-image: url(./IMAGES/Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: aliceblue;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+.encabezado__h2{
+    margin: 10px;
+    padding: 20px;
+    color: rgb(2, 4, 7);
+}
+.SuitesyMontaña{
+    margin: 40px;
+    padding: 30px;
+    font-family: 'Average', serif;
+    font-size: 1.8rem;
+}
+.TituloFondo{
+    text-align: left 10 px;
+    color: rgba(8, 7, 7, 0.096);
+    font-size: 6rem;
+    margin-top: 50px;
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+header section{
+    display: flex;
+    justify-content: space-between;
+}
+.subtitulo{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 30px;
+    padding: 10px;
+    font-style: italic;
+    color: rgb(2, 4, 7);
+}
+p span{
+    font-weight: bold;
+}
+.header__section__div__nav{
+    background-image:url(./IMAGES/Entrada\ Complejo.jpg);
+    height: 600px;
+    margin-top:0px;
+}
+.HeaderSuite{
+    object-fit: cover;
+    background-image: url(./IMAGES/RECORTADA.jpg);
+    margin-top: 0px;
+}
+.HeaderServicios{
+    object-fit: cover;
+    background-image: url(./IMAGES/Recortada2.jpg)
+}
+.HeaderGaleria{
+    object-fit: cover;
+    background-image: url(./IMAGES/Recortadapool.jpg)
+}
+.HeaderContacto{
+    object-fit: cover;
+    background-image: url(./IMAGES/MG_8635ff.jpg);
+}
+.sinsubrayar--otroColor{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.05rem;
+    margin: 10px;
+    padding: 20px;
+}
+.sinsubrayar{
+    
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+    }
+.lista__navegacion{
+    background-color: rgba(28, 51, 51, 0.445);
+    margin-bottom: 50px;
+    margin-top: 25px;
+    list-style-type: none;
+    font-size: 1.05rem;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+h1{
+    font-family: 'Average', serif;
+    text-align: center;
+    background-color: rgba(10, 84, 145, 0.856);
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    text-align: center;
+}
+.MainServicio{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    
+}
+.EmojiServicios{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    gap: 4rem;
+
+}
+.parrafo1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 3rem
+    
+}
+.Clima{
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+}
+.Contactanos{
+    margin: 50px;
+    margin-left: 200px;
+    font-size: 1.8rem;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Contactanos_{
+    color: rgba(21, 23, 26, 0.432);
+    font-size: 1.2rem;
+    margin: 50px;
+}
+.SectionFormulario{
+    margin: 20px;
+    margin-left: 100px;
+    font-size: 1.1rem;
+}
+.ClaseFormulario{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+.contacto{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 400px;
+    padding: 30px;
+}
+.ParrafoServicios{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    margin: 80px;    
+}
+.ParrafoDeSuite{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5rem;
+    padding: 1rem;
+}
+.Servicios3{
+    font-size: 2.3rem;
+    font-family:'Times New Roman', Times, serif;
+    margin: 30px;
+    padding: 10px;
+}
+.DescripcionServi{
+    margin: 20px;
+    font-size:1.3rem ;
+    padding: 10px;
+    font-family: sans-serif;
+}
+.TituloPaseo{
+    font-size: 2.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 10px;
+}
+.ParrafoPaseo{
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.685);
+}
+.Paseos{
+    margin: 20px;
+    padding: 20px;
+    font-size: 1.5rem;
+
+}
+footer{
+    background-color: rgba(21, 54, 145, 0.993);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-family: 'Quattrocento', serif;
+    color: rgb(247, 248, 248);
+}
+.logo {
+    max-width: 80%;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        }
+    .ImagenSuite{
+        transition: all .2s ease-in-out;
+        width: 250px;
+        margin: 1.5rem;
+        display: grid;
+        justify-content: space-between;
+    }
+    .ImagenSuite:hover{
+        transform: scale(1.1);
+    }
+    .imagenesCentradas{
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-areas: "img1 img2 img3"
+                             "img1 img5 img3";
+        grid-auto-rows: 32% 32% 32%;
+        margin: 0 auto;
+        gap: 1%;
+    }
+    .img1{
+        grid-area: "img1";
+    }
+    .img2{
+        grid: "img2";
+    }
+    .img3{
+        grid-area: "img4";
+    }
+    .img4{
+        grid-area: "img4";
+    }
+    .img5{
+        grid-area: "img5";
+    }
+    .img6{
+        grid-area: "img6";
+    }
+    .img7{
+        grid-area: "img7";
+    }
+    .img8{
+        grid-area: "img8";
+    }
+    .img9{
+        grid-area: "img9";
+    }
+    .SuiteFemmes{
+        margin-left: 6rem;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .SuiteEstrella{
+        margin-left: 6rem;
+        margin: 0 auto ;
+        flex-wrap: wrap;
+    }
+    .SuiteOliva{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .FuenteSuite{
+        font-size: 1.7rem;
+        font-family: 'Average', serif;
+        margin-bottom: 2rem;
+    }
+    .FuenteCarac--otroitem{
+        margin-left: 7rem;
+        margin: 0 auto;
+        display: inline-block ;
+        justify-content: center;
+        align-items: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .MarginSuite{
+        margin-top: 7rem;
+    }
+    .MarginSuite--otromargen{
+        margin-top: 7rem;
+        display: inline-block;
+        flex-direction: column;
+    }
+    .ImagenSuite1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }

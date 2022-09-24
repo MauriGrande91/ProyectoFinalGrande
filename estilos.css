@@ -238,7 +238,7 @@ footer{
     font-family: 'Quattrocento', serif;
     color: rgb(247, 248, 248);
 }
-.logo {
+.logo1 {
     max-width: 80%;
     }
     header nav ul{
@@ -338,4 +338,40 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    @media screen and (max-width: 767px){
+        .Container_Grid{
+            height: auto;
+            grid-template-areas: "header"
+            "div"
+            "main"
+            "footer";
+            grid-template-columns: 100%;
+            grid-template-rows: auto;  
+        }
+        .Clima{
+            display: none;
+        }
+        .header__section__div__nav{
+                background-image: none;
+                display: flex;
+                flex-direction: column;
+        }
+        .logo1{
+                margin: 0 auto;
+                width: 90%;
+                object-fit: contain;
+                align-items: center;
+            }
+        .lista__navegacion{
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+                text-align: center;
+            }
+        .mediaquery{ 
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 3rem;
+            }       
     }

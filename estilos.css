@@ -48,7 +48,7 @@ footer{
     font-size: 1.8rem;
 }
 .TituloFondo{
-    text-align: left 10 px;
+    text-align: center;
     color: rgba(8, 7, 7, 0.096);
     font-size: 6rem;
     margin-top: 50px;
@@ -361,19 +361,25 @@ footer{
                 flex-direction: column;
         }
         .logo1{
-                margin: 0 auto;
+                text-align: center;
                 max-width: 100%; 
                 align-items: center;
             }
         .lista__navegacion{
+            padding: 1rem;
                 display: flex;
                 flex-direction: column;
-                margin: 0 auto;
-                text-align: center;
+                text-align: center; 
+            }
+            .sinsubrayar--otroColor{
+                margin: 0.5rem;
+                padding: 0.5rem;
             }
         .mediaquery{ 
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 3rem;
+                text-align: center;
+                align-items: center;
             }       
     }

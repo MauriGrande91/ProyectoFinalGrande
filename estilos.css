@@ -359,8 +359,7 @@ footer{
         }
         .logo1{
                 margin: 0 auto;
-                width: 90%;
-                
+                width: 100%; 
                 align-items: center;
             }
         .lista__navegacion{

@@ -256,7 +256,6 @@ footer{
         transform: scale(1.1);
     }
     .imagenesCentradas{
-        background-color: blueviolet;
         display: grid;
         grid-template-columns: 33.3% 33.3% 33.3%;
         grid-template-areas: "img1 img2 img3"
@@ -264,33 +263,6 @@ footer{
         grid-auto-rows: 32% 32% 32%;
         margin: 0 auto;
         gap: 1%;
-    }
-    .img1{
-        grid-area: "img1";
-    }
-    .img2{
-        grid: "img2";
-    }
-    .img3{
-        grid-area: "img4";
-    }
-    .img4{
-        grid-area: "img4";
-    }
-    .img5{
-        grid-area: "img5";
-    }
-    .img6{
-        grid-area: "img6";
-    }
-    .img7{
-        grid-area: "img7";
-    }
-    .img8{
-        grid-area: "img8";
-    }
-    .img9{
-        grid-area: "img9";
     }
     .SuiteFemmes{
         margin-left: 6rem;
@@ -318,13 +290,16 @@ footer{
         font-family: 'Average', serif;
         margin-bottom: 2rem;
     }
+    .FuenteCarac{
+        font-family: 'Average', serif;
+    }
     .FuenteCarac--otroitem{
         margin-left: 7rem;
         margin: 0 auto;
         display: inline-block ;
         justify-content: center;
         align-items: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: 'Average', serif;
     }
     .MarginSuite{
         margin-top: 7rem;
@@ -351,6 +326,7 @@ footer{
         }
         .TituloFondo{
             text-align: center;
+            font-size: 3rem;
         }
         .Clima{
             display: none;
@@ -361,7 +337,7 @@ footer{
                 flex-direction: column;
         }
         .logo1{
-                text-align: center;
+            margin: 0 auto;
                 max-width: 100%; 
                 align-items: center;
             }
@@ -371,15 +347,45 @@ footer{
                 flex-direction: column;
                 text-align: center; 
             }
-            .sinsubrayar--otroColor{
-                margin: 0.5rem;
-                padding: 0.5rem;
-            }
         .mediaquery{ 
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 3rem;
                 text-align: center;
                 align-items: center;
-            }       
-    }
+            }   
+            
+            .HeaderSuite{
+                background-image: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }   
+            .ParrafoDeSuite{
+                font-size: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top:2.5rem;
+                padding: 0.5rem;
+            }
+            .MarginSuite{
+                display: flex ;
+                flex-direction: column;
+                justify-content: center;
+                align-items:center ;
+                text-align: center;
+            } 
+            .MarginSuite--otromargen{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;  
+            }
+            .ImagenSuite1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }

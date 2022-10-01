@@ -19,7 +19,7 @@ header{
     grid-area: header;
 }
 div{
-   grid-area: div; 
+    grid-area: div; 
 }
 main{
     grid-area: main;
@@ -48,6 +48,7 @@ footer{
     font-size: 1.8rem;
 }
 .TituloFondo{
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: rgba(8, 7, 7, 0.096);
     font-size: 6rem;
@@ -229,17 +230,8 @@ h1{
     font-size: 1.5rem;
 
 }
-footer{
-    background-color: rgba(21, 54, 145, 0.993);
-    border-radius: 1rem;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
-    font-family: 'Quattrocento', serif;
-    color: rgb(247, 248, 248);
-}
-.logo1 {
-    max-width: 80%;
+    .logo1 {
+        max-width: 80%;
     }
     header nav ul{
         display: flex;
@@ -282,8 +274,6 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-
     }
     .FuenteSuite{
         font-size: 1.7rem;
@@ -316,20 +306,20 @@ footer{
     }
     @media screen and (max-width: 767px){
         .Container_Grid{
-            height: auto;
-            grid-template-areas: "header"
-            "div"
-            "main"
-            "footer";
-            grid-template-columns: 100%;
-            grid-template-rows: auto;  
+                height: auto;
+                grid-template-areas: "header"
+                "div"
+                "main"
+                "footer";
+                grid-template-columns: 100%;
+                grid-template-rows: auto;  
         }
         .TituloFondo{
-            text-align: center;
-            font-size: 3rem;
+                text-align: center;
+                font-size: 3rem;
         }
         .Clima{
-            display: none;
+                display: none;
         }
         .header__section__div__nav{
                 background-image: none;
@@ -337,7 +327,7 @@ footer{
                 flex-direction: column;
         }
         .logo1{
-            margin: 0 auto;
+                margin: 0 auto;
                 max-width: 100%; 
                 align-items: center;
             }
@@ -388,4 +378,4 @@ footer{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            }
+            }}

@@ -1,0 +1,259 @@
+.HeaderGaleria{
+    object-fit: cover;
+    background-image: url(../IMAGES/Recortadapool.jpg)
+}
+.HeaderSuite{
+    object-fit: cover;
+    background-image: url(../IMAGES/RECORTADA.jpg);
+}
+.FuenteNav{
+    color: rgb(236, 236, 236) !important;
+    background-color: rgba(0, 0, 0, 0.562);
+    height: 10%;
+    margin-top: 1rem;
+    position: sticky;
+    z-index: 20;
+
+
+}
+header section{
+    display: flex;
+    justify-content: space-between;
+}
+.ListaNav{
+    list-style-type: none;
+    color: aliceblue !important ;
+    display: flex;
+}
+.nav-link{
+    text-decoration: none;
+    color: aliceblue !important;
+}
+h1{
+    font-family: 'Average', serif;
+    text-align: center;
+    background-color: rgba(10, 84, 145, 0.856);
+    margin: 0px;
+    padding: 0px;
+}
+.sinsubrayar{
+    
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+    }
+.lista__navegacion{
+    background-color: rgba(28, 51, 51, 0.445);
+    margin-bottom: 50px;
+    margin-top: 25px;
+    list-style-type: none;
+    font-size: 1.05rem;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+a{
+    color: aliceblue;
+    margin: 1rem;
+    padding: 1rem;
+    width: 30%;
+}
+
+
+.logo1 {
+    max-width: 80%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    }
+.ImagenSuite{
+    transition: all .2s ease-in-out;
+    width: 250px;
+    margin: 1.5rem;
+    display: grid;
+    justify-content: space-between;
+}
+.ImagenSuite:hover{
+    transform: scale(1.1);
+}
+.imagenesCentradas{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-areas: "img1 img2 img3"
+                         "img1 img5 img3";
+    grid-auto-rows: 32% 32% 32%;
+    margin: 0 auto;
+    gap: 1%;
+}
+.SuiteFemmes{
+    margin-left: 6rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+.SuiteEstrella{
+    margin-left: 6rem;
+    margin: 0 auto ;
+    flex-wrap: wrap;
+}
+.SuiteOliva{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.FuenteSuite{
+    font-size: 1.7rem;
+    font-family: 'Average', serif;
+    margin-bottom: 2rem;
+}
+.FuenteCarac{
+    font-family: 'Average', serif;
+    display: inline-block ;
+    justify-content: center;
+    align-items: center;
+}
+.FuenteCarac--otroitem{
+    margin-left: 7rem;
+    margin: 0 auto;
+    display: inline-block ;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Average', serif;
+}
+.MarginSuite{
+    margin-top: 7rem;
+}
+.MarginSuite--otromargen{
+    margin-top: 7rem;
+    display: inline-block;
+    flex-direction: column;
+}
+.ImagenSuite1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ParrafoDeSuite{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5rem;
+    padding: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 767px){
+    .Container_Grid{
+            height: auto;
+            grid-template-areas: "header"
+            "div"
+            "main"
+            "footer";
+            grid-template-columns: 100%;
+            grid-template-rows: auto;  
+    }
+    .TituloFondo{
+            text-align: center;
+            font-size: 3rem;
+    }
+    .Clima{
+            display: none;
+    }
+    .header__section__div__nav{
+            background-image: none;
+            display: flex;
+            flex-direction: column;
+    }
+    .logo1{
+            margin: 0 auto;
+            max-width: 100%; 
+            align-items: center;
+        }
+    .lista__navegacion{
+        padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            text-align: center; 
+        }
+    .mediaquery{ 
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            text-align: center;
+            align-items: center;
+        }   
+        
+        .HeaderSuite{
+            background-image: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }   
+        .ParrafoDeSuite{
+            font-size: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:2.5rem;
+            padding: 0.5rem;
+        }
+        .MarginSuite{
+            display: flex ;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center ;
+            text-align: center;
+        } 
+        .MarginSuite--otromargen{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;  
+        }
+        .ImagenSuite1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .HeaderGaleria{
+            background-image: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-link{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .ListaNav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar-expand-lg{
+            margin-bottom: 1rem;
+        }
+        
+}

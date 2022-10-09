@@ -13,8 +13,28 @@
 <body>
     <header>
         <section class="HeaderContacto">
-                <img class="logo" src="../Paginas/Las tranqueras2.png" alt="logo" width="300">
-        <nav>
+                <img class="logo1" src="../Paginas/Las tranqueras2.png" alt="logo" width="300">
+                <nav class="navbar-expand-lg navbar-dark bg-color-none fixed-top FuenteNav">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <ul class="ListaNav">
+                            <li>
+                          <a class="nav-link active" aria-current="page" href="../index.html">HOME</a></li>
+                          <li><a class="nav-link" href="../Paginas/suites.html">SUITES</a></li>
+                          <li><a class="nav-link" href="../Paginas/servicios.html">SERVICIOS</a></li>
+                          <li><a class="nav-link" href="../Paginas/galeria.html">GALERIA</a></li>
+                          <li><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
+                        </ul>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+        <!-- <nav>
         <ul class="lista__navegacion">
             <li><a class="sinsubrayar" href="../index.html">HOME</a></li>
             <li><a class="sinsubrayar" href="../Bootstrap/suites.html">SUITES</a></li>
@@ -22,13 +42,66 @@
             <li><a class="sinsubrayar" href="../Bootstrap/galeria.html">GALERIA</a></li>
             <li><a class="sinsubrayar" href="./contacto.html">CONTACTO</a></li>
         </ul>
-        </nav>
+        </nav> -->
         </section>
     </header>
     <div>     
         <h1>CONTACTO</h1>
     </div>
-    <div class="ClaseFormulario">
+    <div class="container ClaseContacto ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                            <legend class="text-center header">Contactanos</legend>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="email" name="email" type="text" placeholder="Correo Electronico" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <input id="phone" name="phone" type="text" placeholder="Número Telefónico" class="form-control">
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col-md-8">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Deje su comentario aquí...trataremos de responder a la brevedad" rows="7"></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar Formulario</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="ClaseFormulario">
     <form action="">
         <h4 class="Contactanos">Contactanos</h4>
         <p class="Contactanos_">Dejanos tu mensaje y responderemos a la brevedad</p>
@@ -49,10 +122,11 @@
             <input type="submit" required>
         </div>
     </section>
-    </form>
+    </form> -->
         <div >
         <h3 class="contacto" >Como Llegar</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1696.7409599252258!2d-65.01455682287244!3d-31.730044303544933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d266e2e872adb%3A0x65fed12425d5e95!2sPasaje%2025%20de%20Mayo%2C%20Mina%20Clavero%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1661732523836!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+        <div class="embed-container"> 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1696.7409599252258!2d-65.01455682287244!3d-31.730044303544933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d266e2e872adb%3A0x65fed12425d5e95!2sPasaje%2025%20de%20Mayo%2C%20Mina%20Clavero%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1661732523836!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>     </div>
         </div>
     </Div>
     <footer>
@@ -62,9 +136,9 @@
           </div>
           <div class="card-body">
             <img class="logo" src="../Paginas/WhatsApp.png" alt="" width="20">
-                      +54 (03572) 471950
+            <p class="NumeroTel">+54 (03572) 471950</p>
             <p class="card-text">Desarrollado por Mauricio Grande</p>
-            <a href="https://www.facebook.com/Maurii.Grand/" class="btn btn-primary">Facebook</a>
+            <a href="https://www.facebook.com/Maurii.Grand/" target="_blank" class="btn btn-primary">Facebook</a>
           </div>
           <div class="card-footer text-white bg-primary">
             <img src="../Emoji/ubi.png" alt="" width="20">

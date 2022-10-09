@@ -13,8 +13,6 @@
     margin-top: 1rem;
     position: sticky;
     z-index: 20;
-
-
 }
 header section{
     display: flex;
@@ -37,7 +35,6 @@ h1{
     padding: 0px;
 }
 .sinsubrayar{
-    
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: aliceblue;
@@ -61,7 +58,6 @@ a{
     width: 30%;
 }
 
-
 .logo1 {
     max-width: 80%;
 }
@@ -78,15 +74,6 @@ header nav ul{
 }
 .ImagenSuite:hover{
     transform: scale(1.1);
-}
-.imagenesCentradas{
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-areas: "img1 img2 img3"
-                         "img1 img5 img3";
-    grid-auto-rows: 32% 32% 32%;
-    margin: 0 auto;
-    gap: 1%;
 }
 .SuiteFemmes{
     margin-left: 6rem;
@@ -153,80 +140,6 @@ header nav ul{
 
 
 @media screen and (max-width: 767px){
-    .Container_Grid{
-            height: auto;
-            grid-template-areas: "header"
-            "div"
-            "main"
-            "footer";
-            grid-template-columns: 100%;
-            grid-template-rows: auto;  
-    }
-    .TituloFondo{
-            text-align: center;
-            font-size: 3rem;
-    }
-    .Clima{
-            display: none;
-    }
-    .header__section__div__nav{
-            background-image: none;
-            display: flex;
-            flex-direction: column;
-    }
-    .logo1{
-            margin: 0 auto;
-            max-width: 100%; 
-            align-items: center;
-        }
-    .lista__navegacion{
-        padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            text-align: center; 
-        }
-    .mediaquery{ 
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 3rem;
-            text-align: center;
-            align-items: center;
-        }   
-        
-        .HeaderSuite{
-            background-image: none;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }   
-        .ParrafoDeSuite{
-            font-size: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top:2.5rem;
-            padding: 0.5rem;
-        }
-        .MarginSuite{
-            display: flex ;
-            flex-direction: column;
-            justify-content: center;
-            align-items:center ;
-            text-align: center;
-        } 
-        .MarginSuite--otromargen{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;  
-        }
-        .ImagenSuite1{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
         .HeaderGaleria{
             background-image: none;
             display: flex;

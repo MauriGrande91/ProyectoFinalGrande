@@ -2,9 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Average:400');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento:400');
+@import "variables";
+@import "mixins";
+
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 .Container_Grid{
     display: grid;
@@ -30,132 +34,118 @@ footer{
 .NumeroTel{
     color: rgb(0, 0, 87);
 }
-/* DENTRO DEL HEADER */
-header section{
-    display: flex;
-    justify-content: space-between;
-}
-.header__section__div__nav{
-    background-image:url(./IMAGES/Entrada\ Complejo.jpg);
-    height: 600px;
-    margin-top:0px;
-}
-.logo1 {
-    max-width: 80%;
-}
-header nav ul{
-    display: flex;
-    justify-content: space-between;
-    }
-.lista__navegacion{
-    background-color: rgba(28, 51, 51, 0.445);
-    margin-bottom: 50px;
-    margin-top: 25px;
-    list-style-type: none;
-    font-size: 1.05rem;
-    position: sticky;
-    top: 0px;
-    z-index: 10;
-}
-.FuenteNav{
-    color: rgb(236, 236, 236) !important;
-    background-color: rgba(0, 0, 0, 0.562);
-    height: 10%;
-    margin-top: 1rem;
-    position: sticky;
-    z-index: 20;
-}
-.ListaNav{
-    list-style-type: none;
-    color: aliceblue !important ;
-    display: flex;
-}
-.nav-link{
-    text-decoration: none;
-    color: aliceblue !important;
-}
-a{
-    color: aliceblue;
-    margin: 1rem;
-    padding: 1rem;
-    width: 30%;
-}
+/* DENTRO DEL HEADER DEL INDEX */
+
 h1{
     font-family: 'Average', serif;
     text-align: center;
-    background-color: rgba(10, 84, 145, 0.856);
+    background-color: $color-titulo;
     margin: 0px;
     padding: 0px;
 }
-/* FIN DEL HEADER */
+.header1{
+    background-image:url(../Entrada.jpg);
+    height: 600px;
+    margin-top:0px;
+}
+    header{
+        .mediaquery{
+        display: flex;
+        justify-content: space-between;
+        .logo1{
+        max-width: 90%;
+        }
+        .Fuente{
+            background-color: rgba(0, 0, 0, 0.562);
+            height: 10%;
+            margin-top: 1rem;
+            position: sticky;
+            z-index: 20;
+            .Lista{
+                list-style-type: none;
+                color: aliceblue !important ;
+                display: flex;
+                    .espaciado{
+                        margin: 0.6rem;
+                        padding: 0.6rem;
+                        color: aliceblue;
+                        text-decoration: none                 
+        }
+    }
+        }
+        }
+    }
+/* FIN DEL HEADER DEL INDEX*/
 /* DESPUES DEL HEADER */
 .encabezado{
-    background-image: url(./IMAGES/Banner.jpg);
+    background-image: url(../IMAGES/Banner.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
     margin: 1rem;
     padding: 2rem;
-}
-.encabezado__h2{
-    margin: 1rem;
-    padding: 2rem;
-    color: rgb(2, 4, 7);
-}
-.subtitulo{
-    text-align: center;
+    .encabezado__h2{
+        margin: 1rem;
+        padding: 2rem;
+        color: $color-primero;
+    }
+        .subtitulo{
+            text-align: center;
     font-size: 1.2rem;
     margin: 30px;
     padding: 10px;
     font-style: italic;
-    color: rgb(2, 4, 7);
+    color: $color-primero;
+        }
 }
 p span{
     font-weight: bold;
 }
-/* DENTRO DEL MAIN HOME*/
-.SuitesyMontaña{
-    margin: 40px;
-    padding: 30px;
-    font-family: 'Average', serif;
-    font-size: 1.8rem;
-}
-.TituloFondo{
-    font-family: 'Times New Roman', Times, serif;
+/* DENTRO DEL MAIN DEL INDEX*/
+.menu{
     text-align: center;
-    color: rgba(8, 7, 7, 0.096);
-    font-size: 6rem;
-    margin-top: 50px;
-    position: sticky;
-    top: 20px;
-    z-index: 10;
-}
-.main{
-    text-align: center;
-}
-.parrafo1{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 3rem
+    .TituloFondo{
+        text-align: center;
+        color: $color-secundario;
+        font-size: 6rem;
+        margin-top: 50px;
+        position: sticky;
+        top: 20px;
+        z-index: 10;
+    }
+    .SuitesyMontaña{
+        margin: 40px;
+        padding: 30px;
+        font-family: 'Average', serif;
+        font-size: 1.8rem;
+    }
+    .parrafo1{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 3rem
+    }
 }
 .Clima{
     margin: 8rem;
     display: flex;
     justify-content: center;
 }
-/* FIN MAIN HOME */
+/* FIN MAIN DEL INDEX */
 /* FIN PAGINA HOME */
-.HeaderGaleria{
+
+// HEADER DE GALERIA
+.header4{
     object-fit: cover;
-    background-image: url(./IMAGES/Recortadapool.jpg)
+    background-image: url(../IMAGES/Recortadapool.jpg)
 }
+// FIN HEADER GALERIA
 
 /* DENTRO DE LA PAGINA CONTACTO */
-.HeaderContacto{
+.header5{
     object-fit: cover;
-    background-image: url(./IMAGES/MG_8635ff.jpg);
+    background-image: url(../IMAGES/MG_8635ff.jpg);
 }
 .contacto{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -182,16 +172,27 @@ p span{
 }
 /* FIN PAGINA CONTACTO */
 /* DENTRO DE LA PAGINA SERVICIOS */
-.HeaderServicios{
+.header3{
     object-fit: cover;
-    background-image: url(./IMAGES/Recortada2.jpg)
+    background-image: url(../IMAGES/Recortada2.jpg);
 }
-.MainServicio{
+.Servicio{
     margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.5rem; 
+    padding: 3.5rem;
+    .ParrafoServicios{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+        margin: 8rem;
+    } 
+    .Servicios3{
+        font-size: 2.3rem;
+        font-family:'Times New Roman', Times, serif;
+        margin: 2.5rem;
+        padding: 1rem;
+    }
 }
 .EmojiServicios{
     margin-left: auto;
@@ -200,48 +201,39 @@ p span{
     display: flex;
     gap: 4rem;
 }
-.ParrafoServicios{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
-    margin: 8rem;    
-}
-.Servicios3{
-    font-size: 2.3rem;
-    font-family:'Times New Roman', Times, serif;
-    margin: 2.5rem;
-    padding: 1rem;
-}
+    
 .DescripcionServi{
     margin: 20px;
     font-size:1.3rem ;
     padding: 1rem;
     font-family: sans-serif;
 }
-.TituloPaseo{
+.sesionpaseo{
+    .TituloPaseo{
     font-size: 2.3rem;
     font-family: 'Times New Roman', Times, serif;
     margin: 2rem;
     padding: 1rem;
-}
-.ParrafoPaseo{
-    font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.685);
-}
-.Paseos{
-    list-style-type: none;
-    text-align: center;
-    align-items: center;
-    margin: 1.5rem;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-    font-family: sans-serif;
+    }
+       .ParrafoPaseo{
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.685);
+       }
+            .Paseos{
+            list-style-type: none;
+            text-align: center;
+            align-items: center;
+            margin: 1.5rem;
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            }
 }
 /* FIN PAINA DE SERVICIOS */
     /* DENTRO DE PAGINA SUITES */
-    .HeaderSuite{
+    .header2{
         object-fit: cover;
-        background-image: url(./IMAGES/RECORTADA.jpg);
-        margin-top: 0px;
+        background-image: url(../IMAGES/RECORTADA.jpg);
     }
     .ParrafoDeSuite{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -261,6 +253,19 @@ p span{
     }
     .ImagenSuite:hover{
         transform: scale(1.1);
+    }
+    .imgHover{
+        transition: all .2s ease-in-out;
+    }
+    .imgHover:hover{
+        transform: scale(1.1);
+    }
+    .linkHover{
+        transition: all .2s ease-in-out;
+    }
+    .linkHover:hover{
+        transform: scale(1.1);
+        transition: 0s;
     }
     .SuiteFemmes{
         margin-left: 6rem;
@@ -293,12 +298,10 @@ p span{
         align-items: center;
     }
     .FuenteCarac--otroitem{
+        @extend .FuenteCarac;
         margin-left: 7rem;
         margin: 0 auto;
-        display: inline-block ;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Average', serif;
+        
     }
     .MarginSuite{
         margin-top: 7rem;
@@ -318,42 +321,50 @@ p span{
                 grid-template-columns: 100%;
                 grid-template-rows: auto;  
         }
-        .TituloFondo{
-                text-align: center;
-                font-size: 3rem;
-        }
-        .Clima{
-                display: none;
-        }
-        .header__section__div__nav{
+        .header1 ,.header2, .header3, .header4, .header5{
                 background-image: none;
                 height: 100%;
-        }
-        .logo1{
-                margin: 0 auto;
-                max-width: 100%; 
-                align-items: center;
-            }
-        /* .lista__navegacion{
-            padding: 1rem;
-                display: flex;
-                flex-direction: column;
-                text-align: center; 
-            } */
-        .mediaquery{ 
-                display: flex;
-                flex-direction: column;
-               margin-bottom: 3rem;
-                text-align: center;
-                align-items: center;
-            }   
-            .HeaderSuite{
-                background-image: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }   
+                .mediaquery{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 3rem;
+                    text-align: center;
+                    align-items: center;
+                    .logo1{
+                        margin: 0 auto;
+                        max-width: 100%; 
+                        align-items: center;
+                    }
+                    .Fuente{
+                        .Lista{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                                .espaciado{
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                }
+                            }
+                        }
+                    }
+                }
+                // Main de index
+                    .TituloFondo{
+                            text-align: center;
+                            font-size: 3rem;
+                    }
+                    .parrafo1{
+                        text-align: center;
+                            font-size: 1.5rem;
+                    }
+                    .Clima{
+                            display: none;
+                    }
+                    // Fin de mediaquery del index
             .ParrafoDeSuite{
                 font-size: 1rem;
                 display: flex;
@@ -390,48 +401,14 @@ p span{
                 align-items: center;
                 text-align: center;
             }
-            .HeaderGaleria{
-                background-image: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
             .navbar{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+                @include flex-column-center;
                 align-items: center;
             }
-            .nav-link{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .ListaNav{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
+            
             .navbar-expand-lg{
                 margin-bottom: 1rem;
             }   
-            .HeaderContacto{
-                background-image: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .HeaderServicios{
-                background-image: none;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
             .EmojiServicios{
                 gap: 0.3rem;
                 align-items: center;
@@ -477,8 +454,6 @@ p span{
                 font-size: 1.2rem;
                 font-family: sans-serif;
             }
-            } 
-    
     @media screen and (min-width: 768px) and (max-width:1024px) {
         .Container_Grid{
                 height: auto;
@@ -489,7 +464,7 @@ p span{
                 grid-template-columns: 100%;
                 grid-template-rows: auto;  
         }
-        .header__section__div__nav{
+        .header1{
             background-image: 40%;
         }
         .Clima{

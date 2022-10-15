@@ -4,31 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Bienvenidos a la Página de contacto de Complejo de Cabañas Las Tranqueras">
+    <meta name="keywords" content="Contacto, Formulario, Cabañas">
     <title>Contacto-Las Tranqueras</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <header>
-        <section class="HeaderContacto">
-                <img class="logo1" src="../Paginas/Las tranqueras2.png" alt="logo" width="300">
-                <nav class="navbar-expand-lg navbar-dark bg-color-none fixed-top FuenteNav">
+    <header class="header5">
+        <section class="mediaquery">
+            <a href="../index.html">
+                <img class="logo1" src="../Paginas/Las tranqueras2.png" alt="logo de la pagina" width="300">
+                <nav class="navbar-expand-lg navbar-dark bg-color-none fixed-top Fuente"></a>
                     <div class="container-fluid">
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                          <ul class="ListaNav">
+                          <ul class="Lista">
                             <li>
-                          <a class="nav-link active" aria-current="page" href="../index.html">HOME</a></li>
-                          <li><a class="nav-link" href="../Paginas/suites.html">SUITES</a></li>
-                          <li><a class="nav-link" href="../Paginas/servicios.html">SERVICIOS</a></li>
-                          <li><a class="nav-link" href="../Paginas/galeria.html">GALERIA</a></li>
-                          <li><a class="nav-link" href="./contacto.html">CONTACTO</a></li>
-                        </ul>
-                         
+                          <a class="nav-link active espaciado linkHover aria-current="page href="../index.html">HOME</a></li>
+                          <li><a class="nav-link espaciado linkHover" href="../Paginas/suites.html">SUITES</a></li>
+                          <li><a class="nav-link espaciado linkHover" href="../Paginas/servicios.html">SERVICIOS</a></li>
+                          <li><a class="nav-link espaciado linkHover" href="../Paginas/galeria.html">GALERIA</a></li>
+                          <li><a class="nav-link espaciado linkHover" href="./contacto.html">CONTACTO</a></li>
+                        </ul>                      
                         </div>
                       </div>
                     </div>
@@ -44,39 +46,39 @@
                 <div class="well well-sm">
                     <form class="form-horizontal" method="post">
                         <fieldset>
-                            <legend class="text-center header">Contactanos</legend>
+                            <legend class="text-center">Contactanos</legend>
     
                             <div class="form-group">
                                 <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                 <div class="col-md-8">
-                                    <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                    <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                                 <div class="col-md-8">
-                                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control" required>
                                 </div>
                             </div>
     
                             <div class="form-group">
                                 <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                                 <div class="col-md-8">
-                                    <input id="email" name="email" type="text" placeholder="Correo Electronico" class="form-control">
+                                    <input id="email" name="email" type="text" placeholder="Correo Electronico" class="form-control" required>
                                 </div>
                             </div>
     
                             <div class="form-group">
                                 <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
                                 <div class="col-md-8">
-                                    <input id="phone" name="phone" type="text" placeholder="Número Telefónico" class="form-control">
+                                    <input id="phone" name="phone" type="text" placeholder="Número Telefónico" class="form-control" required>
                                 </div>
                             </div>
     
                             <div class="form-group">
                                 <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                                 <div class="col-md-8">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Deje su comentario aquí...trataremos de responder a la brevedad" rows="7"></textarea>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Deje su comentario aquí...trataremos de responder a la brevedad" rows="7" required></textarea>
                                 </div>
                             </div>
     
@@ -103,13 +105,13 @@
             Todos los derechos reservados
           </div>
           <div class="card-body">
-            <img class="logo" src="../Paginas/WhatsApp.png" alt="" width="20">
+            <img class="logo" src="../Paginas/WhatsApp.png" alt="logo whatsapp" width="20" >
             <p class="NumeroTel">+54 (03572) 471950</p>
             <p class="card-text">Desarrollado por Mauricio Grande</p>
             <a href="https://www.facebook.com/Maurii.Grand/" target="_blank" class="btn btn-primary">Facebook</a>
           </div>
           <div class="card-footer text-white bg-primary">
-            <img src="../Emoji/ubi.png" alt="" width="20">
+            <img src="../Emoji/ubi.png" alt="logo ubicación" width="20">
                       Ruta provincial 14 - Córdoba, Argentina - Mina Clavero - Camino Altas Cumbres
           </div>
         </div>

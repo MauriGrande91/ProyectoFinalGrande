@@ -18,19 +18,19 @@
                          "main"
                          "footer";                   
     grid-template-rows: auto auto auto auto;
-}
-header{
-    grid-area: header;
-}
-div{
-    grid-area: div; 
-}
-main{
-    grid-area: main;
-}
-footer{
-    grid-area: footer;
-}
+    header{
+        grid-area: header;
+        div{
+            grid-area: div; 
+            main{
+                grid-area: main;
+                    footer{
+                        grid-area: footer;
+                    }
+                 }
+            }
+        }
+    }
 .NumeroTel{
     color: rgb(0, 0, 87);
 }
@@ -105,6 +105,7 @@ p span{
 .menu{
     text-align: center;
     .TituloFondo{
+        font-family: 'Times New Roman', Times, serif;
         text-align: center;
         color: $color-secundario;
         font-size: 6rem;
@@ -155,7 +156,11 @@ p span{
     padding: 3rem
 }
 .ClaseContacto{
+    margin: 0 auto;
     margin-top: 3rem;
+    background-color: rgba(13, 107, 214, 0.336);
+    padding: 3rem;
+    
 }
 .embed-container{
     position: relative;
@@ -181,9 +186,9 @@ p span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.5rem;
+    padding: 2.8rem;
     .ParrafoServicios{
-        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-family:sans-serif;
         font-size: 1.2rem;
         margin: 8rem;
     } 
@@ -193,57 +198,60 @@ p span{
         margin: 2.5rem;
         padding: 1rem;
     }
-}
-.EmojiServicios{
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    display: flex;
-    gap: 4rem;
-}
-    
-.DescripcionServi{
-    margin: 20px;
-    font-size:1.3rem ;
-    padding: 1rem;
-    font-family: sans-serif;
-}
-.sesionpaseo{
-    .TituloPaseo{
-    font-size: 2.3rem;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 2rem;
-    padding: 1rem;
+    .DescripcionServi{
+        margin: 20px;
+        font-size:1.1rem ;
+        padding: 1rem;
+        font-family: sans-serif;
     }
-       .ParrafoPaseo{
-        font-size: 1.3rem;
-        color: rgba(0, 0, 0, 0.685);
-       }
-            .Paseos{
-            list-style-type: none;
-            text-align: center;
-            align-items: center;
-            margin: 1.5rem;
-            padding: 1.5rem;
-            font-size: 1.5rem;
-            font-family: sans-serif;
+        .EmojiServicios{
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            display: flex;
+            gap: 4rem;
+            background-color: rgb(0, 110, 255);
+        }
+            .TituloPaseo{
+                font-size: 2.3rem;
+                font-family: 'Times New Roman', Times, serif;
+                margin: 2rem;
+                padding: 1rem;
             }
-}
+                .ParrafoPaseo{
+                    font-size: 1.2rem;
+                    color: rgba(0, 0, 0, 0.685);
+                   }
+                   .Paseos{
+                    list-style-type: none;
+                    text-align: center;
+                    align-items: center;
+                    margin: 1.4rem;
+                    padding: 1.5rem;
+                    font-size: 1.5rem;
+                    font-family: sans-serif;
+                    }
+        }
+
+       
+            
 /* FIN PAINA DE SERVICIOS */
     /* DENTRO DE PAGINA SUITES */
     .header2{
         object-fit: cover;
         background-image: url(../IMAGES/RECORTADA.jpg);
     }
+    .mainsuite{
     .ParrafoDeSuite{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top:5rem;
         padding: 1rem;
     }
+}
     .ImagenSuite{
         transition: all .2s ease-in-out;
         width: 250px;
@@ -267,48 +275,51 @@ p span{
         transform: scale(1.1);
         transition: 0s;
     }
-    .SuiteFemmes{
-        margin-left: 6rem;
-        margin: 0 auto;
-        margin-top: 1.5rem;
-        flex-wrap: wrap;
-    }
-    .SuiteEstrella{
-        margin-left: 6rem;
-        margin: 0 auto ;
-        flex-wrap: wrap;
-    }
-    .SuiteOliva{
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .FuenteSuite{
-        font-size: 1.7rem;
-        font-family: 'Average', serif;
-        margin-bottom: 2rem;
-    }
-    .FuenteCarac{
-        font-family: 'Average', serif;
-        display: inline-block ;
-        justify-content: center;
-        align-items: center;
-    }
-    .FuenteCarac--otroitem{
-        @extend .FuenteCarac;
-        margin-left: 7rem;
-        margin: 0 auto;
-        
-    }
+    
     .MarginSuite{
         margin-top: 7rem;
     }
+        .SuiteFemmes{
+            margin-left: 6rem;
+            margin: 0 auto;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .SuiteEstrella{
+            margin-left: 6rem;
+            margin: 0 auto ;
+            flex-wrap: wrap;
+        }
+            .FuenteSuite{
+                font-size: 1.7rem;
+                font-family: 'Average', serif;
+                margin-bottom: 2rem;
+            }
+                .FuenteCarac{
+                    font-family: 'Average', serif;
+                    display: inline-block ;
+                    justify-content: center;
+                    align-items: center;
+                }
     .MarginSuite--otromargen{
         margin-top: 7rem;
+        align-items: center;
     }
+        .SuiteOliva{
+            margin: 0 auto;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .FuenteCarac--otroitem{
+                margin-left: 7rem;
+                margin: 0 auto;
+                @extend .FuenteCarac;
+                
+            }
     /* FIN PAGINA SUITE */
     @media screen and (max-width: 767px){
         .Container_Grid{
@@ -355,105 +366,117 @@ p span{
                 // Main de index
                     .TituloFondo{
                             text-align: center;
-                            font-size: 3rem;
+                            font-size: 1.3rem;
+                    }
+                    .SuitesyMontaña{
+                        font-size: 1.3rem;
+                        text-align: center;
                     }
                     .parrafo1{
                         text-align: center;
                             font-size: 1.5rem;
                     }
-                    .Clima{
-                            display: none;
-                    }
                     // Fin de mediaquery del index
-            .ParrafoDeSuite{
-                font-size: 1rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top:2.5rem;
-                padding: 0.5rem;
+            
+            .mainsuite{
+                .ParrafoDeSuite{
+                    font-size: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top:2.5rem;
+                    padding: 0.5rem;
+                }
+                        .MarginSuite{
+                            display: flex ;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items:center ;
+                            text-align: center;
+            .FuenteSuite{
+                .FuenteCarac{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+                
             }
-            .MarginSuite{
-                display: flex ;
-                flex-direction: column;
-                justify-content: center;
-                align-items:center ;
-                text-align: center;
-            } 
+        }
             .MarginSuite--otromargen{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center; 
                 text-align: center; 
+                .SuiteOliva{
+                .FuenteCarac--otroitem{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
             }
-            .FuenteCarac{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-            }
-            .FuenteCarac--otroitem{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
+        }
+    }
             }
             .navbar{
-                @include flex-column-center;
+                display: flex;
+               flex-direction: column;
+               justify-content:center;
                 align-items: center;
             }
             
             .navbar-expand-lg{
                 margin-bottom: 1rem;
-            }   
-            .EmojiServicios{
-                gap: 0.3rem;
-                align-items: center;
-                height: 20%;
             }
-            .TituloPaseo{
-                font-size: 2rem;
-                font-family: 'Times New Roman', Times, serif;
-                margin: 1rem;
-                padding: 0.5rem;
-                text-align: center;
+                .ParrafoServicios{
+                    font-family:Georgia, 'Times New Roman', Times, serif;
+                    font-size: 1.3rem; 
+                    text-align: center;
+                }
+                .Servicios3{
+                    font-size: 3rem;
+                    font-family:'Times New Roman', Times, serif;
+                    margin: 1rem;
+                    padding: 0.5rem;
+                }
+                        .DescripcionServi{
+                            align-items: center;
+                            margin: 0 auto;
+                            font-size: 1.3rem ;  
+                            font-family: sans-serif;
+                            text-align: center;
+                }
+                .Servicio{
+                .EmojiServicios{
+                    gap: 1.5rem;
+                    align-items: center;
+                    height: 20%;
+                }
             }
-            .ParrafoPaseo{
-                font-size: 1rem;
-                color: rgba(0, 0, 0, 0.685);
-                text-align: center;
-            }
-            .ParrafoServicios{
-                font-family:Georgia, 'Times New Roman', Times, serif;
-                font-size: 1rem;
-                margin: 0 auto; 
-                text-align: center;   
-            }
-            .Servicios3{
-                font-size: 1.8rem;
-                font-family:'Times New Roman', Times, serif;
-                margin: 2rem;
-                padding: 0.5rem;
-            }
-            .DescripcionServi{
-                margin: 0 auto;
-                font-size:1.2rem ;
-                padding: 1rem;
-                font-family: sans-serif;
-                text-align: center;
-            }
-            .Paseos{
-                list-style-type: none;
-                text-align: center;
-                align-items: center;
-                margin: 0 auto;
-                padding: 0 auto;
-                font-size: 1.2rem;
-                font-family: sans-serif;
-            }
+                .TituloPaseo{
+                    font-size: 2rem;
+                    font-family: 'Times New Roman', Times, serif;
+                    margin: 1rem;
+                    padding: 0.5rem;
+                    text-align: center;
+                }
+                .ParrafoPaseo{
+                    font-size: 1.3Srem;
+                    color: rgba(0, 0, 0, 0.685);
+                    text-align: center;
+                }
+                    .Paseos{
+                        list-style-type: none;
+                        text-align: center;
+                        align-items: center;
+                        margin: 0 auto;
+                        padding: 0 auto;
+                        font-size: 1.2rem;
+                        font-family: sans-serif;
+                    }
     @media screen and (min-width: 768px) and (max-width:1024px) {
         .Container_Grid{
                 height: auto;
@@ -468,5 +491,5 @@ p span{
             background-image: 40%;
         }
         .Clima{
-            display: none;
+            display: flex;
         }}

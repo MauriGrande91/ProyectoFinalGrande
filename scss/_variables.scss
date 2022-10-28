@@ -3,6 +3,10 @@ $color-secundario: rgba(8, 7, 7, 0.096);
 $color-terciario: rgba(0, 0, 0, 0.685);
 $color-titulo: rgba(10, 84, 145, 0.856);
 $color-quinto:  aliceblue;
+$color-sexto: rgb(0, 110, 255);
+
+$fuentes-negrita: bold;
+$texto-centrado: center;
 
 
 $flex: flex;
@@ -11,3 +15,9 @@ $space-between: space-between;
 $row: row;
 $flex-direction: column;
 $flex-direction: center;
+
+// maps
+$estilos:(
+    color: rgb(255, 255, 255),
+    1rem:1rem,
+);

@@ -190,7 +190,7 @@ p span {
     display: flex;
     gap: 3rem;
     background-color: #006eff;
-    width: 100%; }
+    max-width: 90%; }
   .Servicio .TituloPaseo {
     font-size: 2.3rem;
     font-family: 'Times New Roman', Times, serif;

@@ -222,7 +222,7 @@ p span{
             display: flex;
             gap: 3rem;
             background-color: $color-sexto;
-            width: 100%;
+            max-width: 90%;
         }
             .TituloPaseo{
                 font-size: 2.3rem;

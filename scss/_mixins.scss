@@ -1,5 +1,7 @@
-@mixin flex-direction-center {
+@mixin flex-column-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+// El mixin esta sobre la lista de la mediaquery del navegador del index!

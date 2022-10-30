@@ -22,17 +22,7 @@
         .Container_Grid header div main footer {
           grid-area: footer; }
 
-.NumeroTel {
-  color: #000057; }
-
 /* DENTRO DEL HEADER DEL INDEX */
-h1 {
-  font-family: 'Average', serif;
-  text-align: center;
-  background-color: rgba(10, 84, 145, 0.856);
-  margin: 0px;
-  padding: 0px; }
-
 .header1 {
   background-image: url(../Entrada.jpg);
   height: 600px;
@@ -53,11 +43,27 @@ header .mediaquery {
       list-style-type: none;
       color: aliceblue !important;
       display: flex; }
+      header .mediaquery .Fuente .Lista .linkHover {
+        transition: all .2s ease-in-out; }
+        header .mediaquery .Fuente .Lista .linkHover:hover {
+          transform: scale(1.1);
+          transition: 0s;
+          color: #35dacc; }
       header .mediaquery .Fuente .Lista .espaciado {
         margin: 0.6rem;
         padding: 0.6rem;
         color: white;
         text-decoration: none; }
+
+h1 {
+  font-family: 'Average', serif;
+  text-align: center;
+  background-color: rgba(10, 84, 145, 0.856);
+  margin: 0px;
+  padding: 0px; }
+
+.NumeroTel {
+  color: #000057; }
 
 /* FIN DEL HEADER DEL INDEX*/
 /* DESPUES DEL HEADER */
@@ -182,8 +188,9 @@ p span {
     margin-right: auto;
     justify-content: center;
     display: flex;
-    gap: 4rem;
-    background-color: #006eff; }
+    gap: 3rem;
+    background-color: #006eff;
+    width: 100%; }
   .Servicio .TituloPaseo {
     font-size: 2.3rem;
     font-family: 'Times New Roman', Times, serif;
@@ -209,7 +216,7 @@ p span {
 
 .ParrafoDeSuite {
   font-family: sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,9 +229,8 @@ p span {
   margin: 1.5rem;
   display: grid;
   justify-content: space-between; }
-
-.ImagenSuite:hover {
-  transform: scale(1.1); }
+  .ImagenSuite:hover {
+    transform: scale(1.1); }
 
 .imgHover {
   transition: all .2s ease-in-out; }
@@ -232,54 +238,59 @@ p span {
 .imgHover:hover {
   transform: scale(1.1); }
 
-.linkHover {
-  transition: all .2s ease-in-out; }
-
-.linkHover:hover {
-  transform: scale(1.1);
-  transition: 0s; }
-
 .MarginSuite {
   margin-top: 7rem; }
+  .MarginSuite .SuiteFemmes {
+    margin-left: 6rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; }
+    .MarginSuite .SuiteFemmes .FuenteSuite {
+      font-size: 1.7rem;
+      font-family: 'Average', serif;
+      margin-bottom: 2rem; }
+    .MarginSuite .SuiteFemmes .FuenteCarac {
+      font-family: 'Average', serif;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      text-align: justify; }
 
-.SuiteFemmes {
-  margin-left: 6rem;
-  margin: 0 auto;
-  margin-top: 1.5rem;
-  flex-wrap: wrap; }
+.MarginSuite2 {
+  margin-top: 7rem; }
+  .MarginSuite2 .SuiteEstrella {
+    margin-left: 6rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; }
+    .MarginSuite2 .SuiteEstrella .FuenteSuite2 {
+      font-size: 1.7rem;
+      font-family: 'Average', serif;
+      margin-bottom: 2rem; }
+    .MarginSuite2 .SuiteEstrella .FuenteCarac2 {
+      font-family: 'Average', serif;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      text-align: justify; }
 
-.SuiteEstrella {
-  margin-left: 6rem;
-  margin: 0 auto;
-  flex-wrap: wrap; }
-
-.FuenteSuite {
-  font-size: 1.7rem;
-  font-family: 'Average', serif;
-  margin-bottom: 2rem; }
-
-.FuenteCarac, .FuenteCarac--otroitem {
-  font-family: 'Average', serif;
-  display: inline-block;
-  justify-content: center;
-  align-items: center; }
-
-.MarginSuite--otromargen {
-  margin-top: 7rem;
-  align-items: center; }
-
-.SuiteOliva {
-  margin: 0 auto;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.FuenteCarac--otroitem {
-  margin-left: 7rem;
-  margin: 0 auto; }
+.MarginSuite--otromargen, .mainsuite .MarginSuite--otromargen .FuenteSuite3 .FuenteCarac--otroitem {
+  margin-top: 7rem; }
+  .MarginSuite--otromargen .SuiteOliva, .mainsuite .MarginSuite--otromargen .FuenteSuite3 .FuenteCarac--otroitem .SuiteOliva {
+    margin-left: 6rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; }
+    .MarginSuite--otromargen .SuiteOliva .FuenteSuite3, .mainsuite .MarginSuite--otromargen .FuenteSuite3 .FuenteCarac--otroitem .SuiteOliva .FuenteSuite3 {
+      font-size: 1.7rem;
+      font-family: 'Average', serif;
+      margin-bottom: 2rem; }
+    .MarginSuite--otromargen .SuiteOliva .FuenteCarac--otroitem, .mainsuite .MarginSuite--otromargen .FuenteSuite3 .FuenteCarac--otroitem .SuiteOliva .FuenteCarac--otroitem {
+      font-family: 'Average', serif;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      text-align: justify; }
 
 /* FIN PAGINA SUITE */
 @media screen and (max-width: 767px) {
@@ -338,25 +349,32 @@ p span {
   justify-content: center;
   align-items: center;
   text-align: center; }
-  .mainsuite .MarginSuite .FuenteSuite .FuenteCarac, .mainsuite .MarginSuite .FuenteSuite .FuenteCarac--otroitem {
+  .mainsuite .MarginSuite .FuenteSuite .FuenteCarac {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center; }
 
-.mainsuite .MarginSuite--otromargen {
+.mainsuite .MarginSuite2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center; }
-  .mainsuite .MarginSuite--otromargen .SuiteOliva .FuenteCarac--otroitem {
+  .mainsuite .MarginSuite2 .FuenteSuite2 .FuenteCarac2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center; }
+
+.mainsuite .MarginSuite--otromargen, .mainsuite .MarginSuite--otromargen .FuenteSuite3 .FuenteCarac--otroitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 
 .navbar {
   display: flex;
@@ -388,7 +406,7 @@ p span {
 .Servicio .EmojiServicios {
   gap: 1rem;
   align-items: center;
-  height: 20%; }
+  max-width: 80%; }
 
 .TituloPaseo {
   font-size: 2rem;
